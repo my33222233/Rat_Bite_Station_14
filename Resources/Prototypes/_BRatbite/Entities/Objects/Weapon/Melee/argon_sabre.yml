@@ -1,0 +1,37 @@
+- type: entity 
+  name: argon sabre
+  parent: PhoronSabre
+  id: ArgonSabre
+  suffix: DO NOT MAP
+  description: A curio of the signature weapon of the dreaded deathsquads. This one has been damaged, and its phoron accelerator replaced with an argon ionizer. It's mostly for show.
+  components:
+  - type: Sprite
+    sprite: _BRatBites/Objects/Weapon/Melee/argon_sabre.rsi
+    layers:
+    - state: a_sword
+    - state: a_sword_blade
+      color: "#0d0d40"
+      visible: false
+      shader: unshaded
+      map: [ "blade" ]
+  - type: ItemToggleMeleeWeapon
+    activatedSoundOnHit:
+      path: /Audio/Weapons/eblade1.ogg
+      params:
+        variation: 0.250
+    activatedSoundOnHitNoDamage:
+      path: /Audio/Weapons/eblade1.ogg
+      params:
+        variation: 0.250
+        volume: -10
+    activatedSoundOnSwing:
+      path: /Audio/Weapons/eblademiss.ogg
+      params:
+        variation: 0.125
+    activatedDamage:
+      types:
+        Slash: 5
+        Heat: 35
+        Structural: 50
+  - type: Item
+    sprite: _Goobstation/Objects/Weapons/Melee/phoron_sabre_inhands.rsi # inhands should still fit for argon :joel:
