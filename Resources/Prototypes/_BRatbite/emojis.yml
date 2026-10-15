@@ -1,0 +1,11 @@
+﻿- type: emoji
+  id: godo
+  sprite:
+    sprite: /Textures/_BRatbites/Emojis/godo.rsi
+    state: icon
+
+- type: emoji
+  id: shock_glove
+  sprite:
+    sprite: /Textures/_BRatbites/CharEffects/shock_glove.rsi
+    state: icon
