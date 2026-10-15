@@ -68,15 +68,16 @@
       upgrade_slot_4: !type:ContainerSlot
   - type: ItemSlots
     slots:
-      bayonet:
-        name: weapon-upgrade-slot-name-bayonet
-        priority: 6
-        insertDelay: 0.4
-        ejectDelay: 0.4
-        ejectOnBreak: true
-        whitelist:
-          components:
-          - GunUpgradeBayonet
+# Ratbite - commenting it out since its broken; TODO - someone ples fix
+#      bayonet:
+#        name: weapon-upgrade-slot-name-bayonet
+#        priority: 6
+#        insertDelay: 0.4
+#        ejectDelay: 0.4
+#        ejectOnBreak: true
+#        whitelist:
+#          components:
+#          - GunUpgradeBayonet
       flashlight:
         name: weapon-upgrade-slot-name-flashlight
         priority: 5

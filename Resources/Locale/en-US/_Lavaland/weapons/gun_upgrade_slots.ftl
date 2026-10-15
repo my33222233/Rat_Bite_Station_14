@@ -1,4 +1,5 @@
 weapon-upgrade-slot-name-flashlight = Flashlight
+weapon-upgrade-slot-name-bayonet = Bayonet
 weapon-upgrade-slot-name-first = First upgrade slot
 weapon-upgrade-slot-name-second = Second upgrade slot
 weapon-upgrade-slot-name-third = Third upgrade slot
