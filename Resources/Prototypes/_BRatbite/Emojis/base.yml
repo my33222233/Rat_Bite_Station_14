@@ -1,0 +1,5 @@
+- type: emoji
+  id: shock_glove
+  sprite:
+    sprite: /Textures/_BRatBites/CharEffects/shock_glove.rsi
+    state: icon
