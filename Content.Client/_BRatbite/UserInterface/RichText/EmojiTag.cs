@@ -1,4 +1,5 @@
 ﻿using System.Diagnostics.CodeAnalysis;
+using System.Numerics;
 using Content.Shared._BRatbite.UserInterface;
 using JetBrains.Annotations;
 using Robust.Client.GameObjects;
@@ -28,13 +29,14 @@ public sealed class EmojiTag : IMarkupTagHandler
             return false;
         var view = new TextureRect
         {
-            SetWidth = EmojiWidth,
-            SetHeight = EmojiHeight,
+            MinSize = new Vector2(EmojiWidth, EmojiHeight),
+            SetSize = new Vector2(EmojiWidth, EmojiHeight),
+            HorizontalExpand = true,
+            VerticalExpand = true,
             Texture = _entMan.System<SpriteSystem>().Frame0(emoji.Sprite),
             Stretch = TextureRect.StretchMode.Scale,
             HorizontalAlignment = Control.HAlignment.Center,
             VerticalAlignment = Control.VAlignment.Center,
-            Margin = new Thickness(2),
         };
         control = view;
         return true;
