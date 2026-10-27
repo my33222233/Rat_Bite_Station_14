@@ -76,7 +76,7 @@ public sealed partial class AdminObjectivesSystem : EntitySystem
         var issuers = new HashSet<string> { DefaultIssuer };
         foreach (var proto in _proto.EnumeratePrototypes<EntityPrototype>())
         {
-            if (proto.Abstract || !proto.TryComp<ObjectiveComponent>(out var comp, _compFactory))
+            if (proto.Abstract || !proto.TryGetComponent<ObjectiveComponent>(out var comp, _compFactory))
                 continue;
 
             string issuer = comp.Issuer;
