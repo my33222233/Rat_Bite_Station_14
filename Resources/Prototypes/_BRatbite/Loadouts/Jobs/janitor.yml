@@ -1,0 +1,14 @@
+
+- type: loadoutEffectGroup
+  id: RevolverUnlock
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:DepartmentTimeRequirement
+      department: Security                                              time: 36000 #10 hrs
+
+- type: loadout
+  id: galoshes
+  name: Galoshes
+  equipment:
+    boots: ClothingBootsGaloshes

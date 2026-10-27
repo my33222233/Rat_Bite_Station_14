@@ -228,6 +228,7 @@
   minLimit: 1
   maxLimit: 1
   loadouts:
-  - ClothingShoesGaloshes
-  - ClothingShoesColorBlack
+  - Galoshes
+  - BlackShoes
+  - WinterBoots
 #endregion
