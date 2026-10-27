@@ -218,3 +218,16 @@
   - TramDriverGlovesBlack
   - TramDriverGlovesWhite
 #TRAM ended
+
+#region Janitor
+
+# evil anti-raider galoshes timelock
+- type: loadoutGroup
+  id: JanitorBoots
+  name: loadout-group-janitor-boots
+  minLimit: 1
+  maxLimit: 1
+  loadouts:
+  - ClothingShoesGaloshes
+  - ClothingShoesColorBlack
+#endregion
