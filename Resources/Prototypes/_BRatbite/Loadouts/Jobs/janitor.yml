@@ -1,14 +1,16 @@
 
 - type: loadoutEffectGroup
-  id: RevolverUnlock
+  id: GaloshesUnlock
   effects:
   - !type:JobRequirementLoadoutEffect
     requirement:
-      !type:DepartmentTimeRequirement
-      department: Security                                              time: 36000 #10 hrs
+      !type:OverallPlaytimeRequirement
+      time: 0.25h # :godo:
 
 - type: loadout
-  id: galoshes
-  name: Galoshes
+  id: Galoshes
   equipment:
-    boots: ClothingBootsGaloshes
+    shoes: ClothingShoesGaloshes
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: GaloshesUnlock

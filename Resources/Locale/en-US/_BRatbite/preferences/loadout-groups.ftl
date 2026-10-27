@@ -36,4 +36,4 @@ loadout-group-tramdriver-hat = Tram driver hat
 loadout-group-tramdriver-gloves = Tram driver gloves
 
 # Janitor
-loadout-group-janitor-boots = Janitor boots
+loadout-group-janitor-shoes = Janitor shoes
