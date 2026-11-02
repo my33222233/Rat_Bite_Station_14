@@ -357,3 +357,22 @@
   - type: EmitSoundOnLand
     sound:
       path: /Audio/Machines/robotscream_2.ogg
+
+- type: entity
+  parent: PlushieCarmella
+  id: EvilTestPlushie
+  name: Test Plushie
+  description: Don't look at it too hard or it might explode...
+  components:
+  - type: TriggerOnThrow
+    keyOut: explode
+  - type: RandomChanceTriggerCondition
+    keys: explode
+  - type: ExplodeOnTrigger
+    keysIn: explode
+  - type: Explosive
+    explosionType: Default
+    maxIntensity: 10
+    intensitySlope: 2
+    totalIntensity: 50
+    canCreateVacuum: false
